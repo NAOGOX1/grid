@@ -1,0 +1,66 @@
+.contenedor{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 25px;
+    display: grid;
+    grid-gap: 10px;
+    text-align: center;
+    /*grid-template-columns: 150px 150px 250px;
+    grid-template-rows: 150px 250px 100px 50px 20px;
+    grid-template-columns: minmax(50px,180px) 2fr 1fr;*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 8fr 2fr;
+    grid-template-areas: "header header    header"
+                         "side1  contenido side2"
+                         "footer footer footer";
+}
+.contenedor>div{
+    background-color: brown;
+}
+.contenedor .header{
+    background-color: yellow;
+    grid-column: header;
+    /*grid-column-start: header;
+    grid-column-end: header;*/
+}
+.contenedor .side1{
+    background-color: blueviolet;
+    grid-column: side1;
+}
+.contenedor .contenido{
+    background-color: chartreuse;
+    grid-column: contenido;
+}
+.contenedor .side2{
+    background-color: burlywood;
+    grid-column: side2;
+}
+.contenedor .footer{
+    background-color: chocolate;
+    grid-column: footer;
+}
+.contenedor .caja1{
+    background-color: red;
+    padding: 10px;
+    margin: 15px;
+}
+.contenedor .caja2{
+    background-color: blue;
+    padding: 10px;
+    margin: 15px;
+}
+.contenedor .caja3{
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 15px;
+}
+.contenedor .caja4{
+    background-color: brown;
+    padding: 10px;
+    margin: 15px;
+}
+.contenedor .caja5{
+    background-color: red;
+    padding: 10px;
+    margin: 15px;
+}
